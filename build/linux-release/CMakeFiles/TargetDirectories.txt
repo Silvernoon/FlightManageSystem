@@ -1,6 +1,0 @@
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/TicketManageSystem.dir
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/test.dir
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/edit_cache.dir
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/rebuild_cache.dir
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/TicketManageSystem_autogen_timestamp_deps.dir
-/home/sivn/Repos/TicketManageSystem/build/linux-release/CMakeFiles/TicketManageSystem_autogen.dir
