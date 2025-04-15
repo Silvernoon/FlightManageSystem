@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/sivn/Repos/TicketManageSystem/build/linux-release",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -O2 -g -DNDEBUG -std=gnu++20 -fno-direct-access-external-data -o CMakeFiles/TicketManageSystem.dir/TicketManageSystem_autogen/mocs_compilation.cpp.o -c /home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/mocs_compilation.cpp",
+  "file": "/home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/TicketManageSystem.dir/TicketManageSystem_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/sivn/Repos/TicketManageSystem/build/linux-release",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -O2 -g -DNDEBUG -std=gnu++20 -fno-direct-access-external-data -o CMakeFiles/TicketManageSystem.dir/main.cpp.o -c /home/sivn/Repos/TicketManageSystem/source/main.cpp",
+  "file": "/home/sivn/Repos/TicketManageSystem/source/main.cpp",
+  "output": "CMakeFiles/TicketManageSystem.dir/main.cpp.o"
+},
+{
+  "directory": "/home/sivn/Repos/TicketManageSystem/build/linux-release",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -O2 -g -DNDEBUG -std=gnu++20 -fno-direct-access-external-data -o CMakeFiles/TicketManageSystem.dir/window.cpp.o -c /home/sivn/Repos/TicketManageSystem/source/window.cpp",
+  "file": "/home/sivn/Repos/TicketManageSystem/source/window.cpp",
+  "output": "CMakeFiles/TicketManageSystem.dir/window.cpp.o"
+},
+{
+  "directory": "/home/sivn/Repos/TicketManageSystem/build/linux-release",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -O2 -g -DNDEBUG -std=gnu++20 -fno-direct-access-external-data -o CMakeFiles/TicketManageSystem.dir/IO.cpp.o -c /home/sivn/Repos/TicketManageSystem/source/IO.cpp",
+  "file": "/home/sivn/Repos/TicketManageSystem/source/IO.cpp",
+  "output": "CMakeFiles/TicketManageSystem.dir/IO.cpp.o"
+}
+]

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_TicketManageSystem_FILE /home/sivn/Repos/TicketManageSystem/build/linux-release/TicketManageSystem)
+set(__QT_DEPLOY_TARGET_TicketManageSystem_TYPE EXECUTABLE)
