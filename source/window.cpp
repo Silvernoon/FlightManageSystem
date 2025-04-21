@@ -86,7 +86,9 @@ ListWindow::ListWindow(std::vector<Train> table) : ui(new Ui::list) {
   for (const Train &v : table) {
 #define tt(c, u) ui->tableWidget->setItem(i, c, new QTableWidgetItem(u))
 #define N2S(c) QString::number(c)
-    tt(TIME, v.GetTime().toString("h:mm"));
+
+    tt(TIME, QTime::currentTime() < v.GetTime() ? v.GetTime().toString("h:mm")
+                                                : "此班已发出");
     tt(START, v.GetStart());
     tt(FINAL, v.GetFinal());
     tt(DURATION, N2S(v.GetDuration()));
@@ -168,7 +170,7 @@ void SellWindow::book() {
 
 void SellWindow::refund() {
   WWW;
-  if (key.SubCount()) {
+  if (key.SubCount() || QTime::currentTime() < Train::Table[id].GetTime()) {
     QMessageBox::information(this, "退票", "订票成功");
   } else
     QMessageBox::critical(this, "退票", "退票失败，无票");
