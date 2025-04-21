@@ -160,6 +160,10 @@ SellWindow::SellWindow() : ui(new Ui::sell) {
 
 void SellWindow::book() {
   WWW;
+  if (QTime::currentTime() >= Train::Table[id].GetTime()) {
+    QMessageBox::critical(this, "订票", "订票失败，已发车");
+    return;
+  }
   if (key.AddCount()) {
     QMessageBox::information(this, "订票", "订票成功");
   } else
@@ -170,8 +174,13 @@ void SellWindow::book() {
 
 void SellWindow::refund() {
   WWW;
-  if (key.SubCount() || QTime::currentTime() < Train::Table[id].GetTime()) {
-    QMessageBox::information(this, "退票", "订票成功");
+  if (QTime::currentTime() >= Train::Table[id].GetTime()) {
+    QMessageBox::critical(this, "退票", "退票失败，已发车");
+    return;
+  }
+
+  if (key.SubCount()) {
+    QMessageBox::information(this, "退票", "退票成功");
   } else
     QMessageBox::critical(this, "退票", "退票失败，无票");
 
