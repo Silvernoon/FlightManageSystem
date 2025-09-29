@@ -2,7 +2,7 @@
 
 A Project for Task group work
 
-Fork from my repo (TicketManageSystem)[https://github.com/Silvernoon/TicketManageSystem]
+Fork from my repo [TicketManageSystem](https://github.com/Silvernoon/TicketManageSystem)
 
 ## Build
 
