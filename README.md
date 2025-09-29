@@ -1,6 +1,8 @@
-# Ticket Manage System
+# Flight Manage System
 
 A Project for Task group work
+
+Fork from my repo (TicketManageSystem)[https://github.com/Silvernoon/TicketManageSystem]
 
 ## Build
 
