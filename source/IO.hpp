@@ -1,10 +1,7 @@
-#ifndef IO_HPP
-#define IO_HPP
+#pragma once
 
-#include "train.hpp"
+#include "Flight.hpp"
 #include <vector>
 
-std::vector<Train> LoadAll();
-void WriteAll(std::vector<Train> vec = Train::Table);
-
-#endif
+void LoadAll();
+void WriteAll(const std::vector<Flight> vec = Flight::table());

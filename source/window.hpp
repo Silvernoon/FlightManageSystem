@@ -1,21 +1,19 @@
-#include "train.hpp"
+#pragma once
+
+#include "Flight.hpp"
 #include "ui_MainWindow.h"
 #include "ui_add.h"
+#include "ui_book.h"
 #include "ui_list.h"
 #include "ui_query.h"
 #include "ui_sell.h"
+#include <QDialog>
 #include <QDialogButtonBox>
 #include <QMainWindow>
 #include <QMetaObject>
-#include <qdialog.h>
-#include <qtmetamacros.h>
-#include <vector>
 
 class MainWindow : public QMainWindow {
   Q_OBJECT
-
-  Ui::mainWindow *ui;
-
 public:
   explicit MainWindow();
   ~MainWindow() = default;
@@ -23,9 +21,11 @@ public:
 private slots:
   // button
   void add();
-  void list();
   void query();
   void sell();
+
+private:
+  Ui::mainWindow *ui;
 };
 
 class AddWindow : public QDialog {
@@ -46,11 +46,30 @@ class ListWindow : public QDialog {
   Ui::list *ui;
 
 public:
-  explicit ListWindow(std::vector<Train> table = Train::Table);
+  explicit ListWindow(FlightPtrTable);
   ~ListWindow() = default;
 
 private slots:
-  void book();
+  void showBook();
+  // void showRefund();
+
+private:
+  FlightPtrTable m_table;
+};
+
+class BookWindow : public QDialog {
+  Q_OBJECT
+
+  Ui::book *ui;
+
+public:
+  explicit BookWindow(Flight *);
+  ~BookWindow() = default;
+
+  void accept() override;
+
+private:
+  Flight *m_target;
 };
 
 class QueryWindow : public QDialog {
@@ -63,7 +82,7 @@ public:
   ~QueryWindow() = default;
 
 private slots:
-  void showTable();
+  void query();
 };
 
 class SellWindow : public QDialog {
@@ -76,6 +95,5 @@ public:
   ~SellWindow() = default;
 
 private slots:
-  void book();
   void refund();
 };

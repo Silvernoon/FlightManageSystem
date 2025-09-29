@@ -11,7 +11,8 @@ set(OpenGL_GL_PREFERENCE
     CACHE STRING "Prefer GLVND libraries")
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
-add_executable(${PROJECT_NAME} main.cpp window.cpp IO.cpp)
+file(GLOB SOURCES "*.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Core Qt6::Widgets)
 # 定义一个自定义目标用于运行程序

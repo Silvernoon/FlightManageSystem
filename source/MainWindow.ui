@@ -7,39 +7,32 @@
     <x>0</x>
     <y>0</y>
     <width>201</width>
-    <height>228</height>
+    <height>179</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>车票管理系统</string>
+   <string>飞机订票管理系统</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QPushButton" name="add">
       <property name="text">
-       <string>录入班次信息</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="list">
-      <property name="text">
-       <string>浏览班次信息</string>
+       <string>录入航班信息</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
-     <widget class="QPushButton" name="query">
+     <widget class="QPushButton" name="sell">
       <property name="text">
-       <string>查询路线</string>
+       <string>退票</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="sell">
+    <item row="1" column="0">
+     <widget class="QPushButton" name="query">
       <property name="text">
-       <string>售票和退票</string>
+       <string>查询航班</string>
       </property>
      </widget>
     </item>
@@ -51,7 +44,7 @@
      <x>0</x>
      <y>0</y>
      <width>201</width>
-     <height>31</height>
+     <height>30</height>
     </rect>
    </property>
   </widget>

@@ -1,28 +1,24 @@
 #include "IO.hpp"
-#include "train.hpp"
+#include "Flight.hpp"
 #include <QDataStream>
 #include <QFile>
 #include <QFileDevice>
 
 #define filename "data"
 
-std::vector<Train> LoadAll() {
-  Train::Table = {};
+void LoadAll() {
   QFile file(filename);
   if (file.open(QIODevice::ReadOnly)) {
     QDataStream in(&file);
     while (!file.atEnd()) {
-      Train t;
-      in >> t;
-      Train::Table.push_back(t);
+      Flight::s_table.emplace_back();
+      in >> Flight::s_table.back();
     }
     file.close();
   }
-
-  return Train::Table;
 }
 
-void WriteAll(std::vector<Train> vec) {
+void WriteAll(const std::vector<Flight> vec) {
   QFile file(filename);
   if (file.open(QIODevice::WriteOnly)) {
     QDataStream out(&file);

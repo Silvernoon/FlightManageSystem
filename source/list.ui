@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>648</width>
+    <width>722</width>
     <height>267</height>
    </rect>
   </property>
@@ -30,38 +30,46 @@
      </property>
      <column>
       <property name="text">
-       <string>发车时间</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>起点站</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
        <string>终点站</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>行车时间(h)</string>
+       <string>航班号</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>额定载量</string>
+       <string>飞机号</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>已额定载量</string>
+       <string>起飞日期</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>乘客定额</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>余票量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>星期</string>
       </property>
      </column>
     </widget>
    </item>
    <item row="1" column="1">
     <widget class="QPushButton" name="pushButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="text">
       <string>订票</string>
      </property>
